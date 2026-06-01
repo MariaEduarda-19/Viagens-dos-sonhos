@@ -1,82 +1,40 @@
  STILE.CSS
-body {
-    
-    background-image: url('viagem1.png'); 
-     
-    background-position: center; 
-    
-    background-repeat: no-repeat; 
-    
-    background-size: cover; 
-    
-    background-attachment: fixed; 
-    
-    min-height: 100vh; 
-    margin: 0;
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #3498db; 
-    color: #ffffff; 
-    font-family: Arial, sans-serif
-    text-align: center;
-    margin-top: 50px;
+body{
+    background:#f4f4f4;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed; 
-  width: 100%;
-  top: 0;
-  transition: all 0.3s ease; 
+header{
+    background:linear-gradient(90deg,#00b4db,#0083b0);
+    color:white;
+    padding:20px;
+    text-align:center;
 }
-.nav-links {
-  display: flex;
-  list-style: none;
+
+nav{
+    margin-top:10px;
 }
-.nav-links li a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 20px;
-  transition: color 0.3s ease;
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+    transition:0.3s;
 }
-.nav-links li a:hover {
-  color: #007bff; 
+
+nav a:hover{
+    color:yellow;
 }
-.menu-mobile {
-  display: none; 
-  font-size: 24px;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; 
-    flex-direction: column;
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    text-align: center;
-  } 
-  .nav-links.ativo {
-    display: flex; 
-  }
-  .menu-mobile {
-    display: block;
-  }
+
+.hero{
+ height:60vh
  
 
 

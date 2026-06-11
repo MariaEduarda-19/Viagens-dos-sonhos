@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Viagens Inesquecíveis | Contato</title>
+    <link rel="stylesheet" href="stile.css">
 </head>
 <body>
 
 <header>
-    <h1>Contato</h1>
-    
+    <h1>Viagens<span>Inesquecíveis</span></h1>
     <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html">Início</a>
         <a href="sobre.html">Sobre nós</a>
         <a href="destinos.html">Destinos</a>
         <a href="pacotes.html">Pacotes</a>
-        <a href="contato.html">Contato</a>
+        <a href="contato.html" class="active">Contato</a>
     </nav>
 </header>
 
-<section class="contato-box">
+<main>
+    <h2 class="titulo-secao">Fale <span>Conosco</span></h2>
 
-<h2>Fale Conosco</h2>
+    <section class="box-formulario">
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Como podemos te ajudar a planejar seu sonho?" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+</main>
 
-<form>
-    <input type="text" placeholder="Seu nome" required>
-    <input type="email" placeholder="Seu e-mail" required>
-    <input type="tel" placeholder="Seu telefone" required>
+<footer>
+    <p>&copy; 2026 Viagens Inesquecíveis. Todos os direitos reservados.</p>
+</footer>
 
-    <textarea placeholder="Digite sua mensagem"></textarea>
-
-    <button type="submit">Enviar</button>
-</form>
-
-</section>
+<script src="script.js"></script>
+</body>
+</html>
 

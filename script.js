@@ -1,26 +1,33 @@
- SCRIPT.JS
+document.addEventListener("DOMContentLoaded" function() {
 
-const forms = document.querySelectorAll("form")
-
-forms.forEach(form => {
-    form.addEventListener("submit", function(e){
-        e.preventDefault()
-
-        alert("Cadastro enviado com sucesso! ✈️")
+    
+    const cards = document.querySelectorAll(".card-destino, .card-pacote")
+    
+    cards.forEach((card index) => {
+        
+        card.style.opacity = "0"
+        card.style.transform = "translateY(20px)"
+        card.style.transition = "all 0.6s ease-out"
+        
+        
+        setTimeout(() => {
+            card.style.opacity = "1"
+            card.style.transform = "translateY(0)"
+        } index * 150)
     })
-})
 
-window.addEventListener("scroll", ()=>{
-    const cards = document.querySelectorAll('.card')
-
-    cards.forEach(card => {
-        const position = card.getBoundingClientRect().top
-
-        if(position < window.innerHeight - 100){
-            card.style.opacity = 1
-            card.style.transform = "translateY(0px)"
-        }
+    
+    const formularios = document.querySelectorAll("form");
+    
+    formularios.forEach(form => {
+        form.addEventListener("submit", function(evento) {
+            
+            evento.preventDefault()
+            
+            
+            alert("Sua solicitação foi processada com sucesso! ✈️")
+            
+            
+            form.reset()
+        })
     })
-})
-
-
